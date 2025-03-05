@@ -4,4 +4,8 @@
 * Plugin Name: Example testing plugin
 */
 
-echo "my testing plugin";
+add_action('admin_notices', function() {
+    echo '<div class="notice notice-info">
+        <p>my testing plugin function</p>
+    </div>';
+});
